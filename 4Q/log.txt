@@ -1,0 +1,20 @@
+Running analysis for Tulip
+Error processing Tulip: [Errno 2] No such file or directory: '4Q/2_4/Tulip_scatter.png'
+Running analysis for Sunflower
+Error processing Sunflower: [Errno 2] No such file or directory: '4Q/2_4/Sunflower_scatter.png'
+Running analysis for Tulip
+Error processing Tulip: [Errno 2] No such file or directory: '4Q/2_4/Tulip_scatter.png'
+Running analysis for Sunflower
+Error processing Sunflower: [Errno 2] No such file or directory: '4Q/2_4/Sunflower_scatter.png'
+Running analysis for Tulip
+Successfully generated plots for Tulip
+Running analysis for Sunflower
+Successfully generated plots for Sunflower
+Running analysis for Tulip
+Successfully generated plots for Tulip
+Running analysis for Sunflower
+Successfully generated plots for Sunflower
+Running analysis for Tulip
+Successfully generated plots for Tulip
+Running analysis for Sunflower
+Successfully generated plots for Sunflower
