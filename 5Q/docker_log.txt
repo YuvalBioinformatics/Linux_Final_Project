@@ -1,0 +1,27 @@
+[INFO] Logging container file contents...
+[INFO] Container: container_1
+total 28K
+drwxrwxr-x 3 1001 1001 4.0K Feb 20 15:55 .
+drwxr-xr-x 1 root root 4.0K Feb 20 15:54 ..
+-rw-rw-r-- 1 1001 1001    0 Feb 20 15:38 container_1_data.csv
+-rw-rw-r-- 1 1001 1001    0 Feb 20 15:38 container_2_data.csv
+-rw-rw-r-- 1 1001 1001    0 Feb 20 15:38 data.csv
+drwxrwxr-x 2 1001 1001 4.0K Feb 20 15:54 docker
+-rwxrwxr-x 1 1001 1001  394 Feb 20 15:55 docker_log.sh
+-rw-rw-r-- 1 1001 1001   72 Feb 20 15:55 docker_log.txt
+-rwxrwxr-x 1 1001 1001 3.7K Feb 20 15:37 manage_csv.sh
+-rw-rw-r-- 1 1001 1001  138 Feb 20 15:38 txt.output_5
+------------------------------------
+[INFO] Container: container_2
+total 28K
+drwxrwxr-x 3 1001 1001 4.0K Feb 20 15:55 .
+drwxr-xr-x 1 root root 4.0K Feb 20 15:54 ..
+-rw-rw-r-- 1 1001 1001    0 Feb 20 15:38 container_1_data.csv
+-rw-rw-r-- 1 1001 1001    0 Feb 20 15:38 container_2_data.csv
+-rw-rw-r-- 1 1001 1001    0 Feb 20 15:38 data.csv
+drwxrwxr-x 2 1001 1001 4.0K Feb 20 15:54 docker
+-rwxrwxr-x 1 1001 1001  394 Feb 20 15:55 docker_log.sh
+-rw-rw-r-- 1 1001 1001  678 Feb 20 15:55 docker_log.txt
+-rwxrwxr-x 1 1001 1001 3.7K Feb 20 15:37 manage_csv.sh
+-rw-rw-r-- 1 1001 1001  138 Feb 20 15:38 txt.output_5
+------------------------------------
