@@ -1,0 +1,1 @@
+Fixing bug 237 - Update password encryption algorithm

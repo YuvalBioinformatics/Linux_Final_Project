@@ -1,0 +1,1 @@
+Fixing bug 241 - Resolve CSS rendering issue in mobile view
