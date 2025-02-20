@@ -1,0 +1,1 @@
+Fixing bug 242 - Fix API timeout issue under high load
