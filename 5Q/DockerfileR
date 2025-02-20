@@ -1,0 +1,21 @@
+# Use R base image
+FROM rocker/r-base:latest
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies (important for R packages)
+RUN apt-get update && apt-get install -y \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev
+
+# Copy the CSV file into the container
+COPY data.csv /app/data.csv
+COPY analysis.R /app/analysis.R
+
+# Install required R packages separately to leverage Docker caching
+RUN R -e "install.packages(c('dplyr', 'ggplot2', 'readr'), repos='http://cran.rstudio.com/')"
+
+# Run the R script
+CMD ["Rscript", "/app/analysis.R"]

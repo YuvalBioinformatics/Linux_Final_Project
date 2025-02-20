@@ -1,0 +1,28 @@
+Group by Species and Calculate Mean Weight:
+"Species"	"Mean_Weight"
+"OT"	24.8
+"PF"	7.5
+"SP11"	60
+NA	116.75
+
+Sorting the Data by Weight:
+"Date collected"	"Species"	"Sex"	"Weight"
+"3/11"	NA	"M"	232
+"5/18"	NA	"F"	182
+"11/22"	"SP11"	"M"	60
+"5/6"	NA	"F"	45
+"6/9"	"OT"	"F"	29
+"3/11"	"OT"	"M"	26
+"2/18"	"OT"	"M"	24
+"2/19"	"OT"	"F"	23
+"3/11"	"OT"	"F"	22
+"3/11"	"PF"	"M"	8
+"4/8"	NA	"F"	8
+"1/8"	"PF"	"M"	7
+
+Count the Number of Males and Females:
+"Sex"	"Count"
+"F"	6
+"M"	6
+
+Plot saved as weight_distribution.png
