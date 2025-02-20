@@ -1,0 +1,42 @@
+    1  cd ~ && mkdir Work_Course_Linux && cd Work_Course_Linux
+    2  rm -rf ~/Work_Course_Linux
+    3  mkdir ~/Work_Course_Linux && cd ~/Work_Course_Linux
+    4  git init
+    5  git remote add origin https://github.com/YuvalBioinformatics/Linux_Final_Project.git
+    6  echo "Yuval Rosen, 208308742" .myid 
+    7  echo "Yuval Rosen, 208308742" > .myid 
+    8  git add .myid
+    9  git commit -m "START"
+   10  mkdir DOWNLOADS
+   11  wget -O downloads.tar.gz https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+   12  tar -xvzf downloads.tar.gz -C DOWNLOADS --strip-components=1
+   13  rm downloads.tar.gz
+   14  git add .
+   15  git commit -m "Downloaded and extracted files"
+   16  mkdir DATA CODE
+   17  mv DOWNLOADS/*.{py,r} CODE/ 2>/dev/null 
+   18  mv DOWNLOADS/*.{txt,jpg,csv} DATA/ 2>/dev/null
+   19  git checkout -b 1_question
+   20  mkdir Q1 
+   21  echo "Time: $(date)" > 1Q/txt.output_1q
+   22  echo "USER DETAILS: $(grep $(whoami) /etc/passwd)" >> 1Q/txt.output_1q
+   23  echo "REPO: $(pwd)" >> 1Q/txt.output_1q
+   24  echo "BRANCH: $(git branch --show-current)" >> 1Q/txt.output_1q
+   25  echo "VERSIONID: $(grep ^VERSION_ID /etc/os-release | cut -d= -f2)" >> 1Q/txt.output_1q
+   26  echo "-------------------------------------------" >> 1Q/txt.output_1q
+   27  find . >> 1Q/txt.output_q1 
+   28  echo "Time: $(date)" > Q1/txt.output_q1
+   29  echo "USER DETAILS: $(grep $(whoami) /etc/passwd)" >> Q1/txt.output_q1
+   30  echo "REPO: $(pwd)" >> Q1/txt.output_q1
+   31  echo "BRANCH: $(git branch --show-current)" >> Q1/txt.output_q1
+   32  echo "VERSIONID: $(grep ^VERSION_ID /etc/os-release | cut -d= -f2)" >> Q1/txt.output_q1
+   33  echo "-------------------------------------------" >> Q1/txt.output_q1
+   34  find . >> Q1/txt.output_q1
+   35  git add .
+   36  git commit -m "Added Q1 directory with files" 
+   37  git checkout main
+   38  git merge 1_question
+   39  git checkout master
+   40  git merge 1_question
+   41  git log --oneline > log.commits_git
+   42  history > linux_commands_history_q1.txt 
