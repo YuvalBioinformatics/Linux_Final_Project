@@ -1,0 +1,1 @@
+Fixing bug 238 - Improve database indexing performance
