@@ -1,0 +1,1 @@
+Fixing bug 240 - Implement two-factor authentication
