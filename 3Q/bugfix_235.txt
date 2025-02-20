@@ -1,0 +1,1 @@
+Fixing bug 235 - Fix login page layout issue
